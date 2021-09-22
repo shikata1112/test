@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/todos', 'App\Http\Controllers\TodoController@index');
+// Route::get('/api/todos', 'TodoController@index');
+// Route::get('/api/tasks', 'TaskController@index');

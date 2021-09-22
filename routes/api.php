@@ -18,4 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('todos', 'TodoController');
+Route::apiResources([
+    '/todos' => TodoController::class,
+    '/tasks' => TaskController::class,
+]);
